@@ -1,0 +1,114 @@
+// Vitest Snapshot v1
+
+exports[`HomepageComponent > CharacterList must always be the same 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <!--modal-->
+  <div
+    class="modal is-active"
+  >
+    <div
+      class="modal-background"
+    />
+    <div
+      class="modal-card"
+    >
+      <!--header-->
+      <header
+        class="modal-card-head"
+      >
+        <!--title/character_name-->
+        <p
+          class="modal-card-title"
+        >
+          character: Rick Sanchez
+        </p>
+        <!--close button-->
+        <button
+          aria-label="close"
+          class="button is-delete is-danger delete"
+        >
+          Close 
+        </button>
+      </header>
+      <!--body/content-->
+      <section
+        class="modal-card-body"
+      >
+        <div
+          class="columns"
+        >
+          <!--character_image-->
+          <div
+            class="column is-4"
+          >
+            <figure
+              class="image is-128x128 mx-auto mb-10px"
+            >
+              <img
+                alt="{{ character?.origin.name }}"
+                class="is-rounded"
+                src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+              />
+            </figure>
+          </div>
+          <div
+            class="column is-8"
+          >
+            <ul>
+              <!--character_Origin-->
+              <li>
+                <strong
+                  class="is-inline has-text-primary"
+                >
+                   Origin: 
+                </strong>
+                 Earth (C-137)
+              </li>
+              <!--character_status-->
+              <li>
+                <strong
+                  class="is-inline has-text-primary"
+                >
+                  Status: 
+                </strong>
+                 Alive
+              </li>
+              <!--character_gender-->
+              <li>
+                <strong
+                  class="is-inline has-text-primary"
+                >
+                   gender: 
+                </strong>
+                 Male
+              </li>
+              <!--character_species-->
+              <li>
+                <strong
+                  class="is-inline has-text-primary"
+                >
+                   species: 
+                </strong>
+                 Human
+              </li>
+              <!--character_lacation-->
+              <li>
+                <strong
+                  class="is-inline has-text-primary"
+                >
+                   location: 
+                </strong>
+                 Citadel of Ricks
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  
+</div>
+`;
