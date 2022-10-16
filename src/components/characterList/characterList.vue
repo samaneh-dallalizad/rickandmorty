@@ -2,6 +2,8 @@
   import { ref, computed, onMounted } from 'vue'
   import { useStore } from 'vuex';
   import characterDetail from '../characterDetail/characterDetail.vue'
+  import Header from "../layout/header.vue";
+  import Footer from "../layout/footer.vue";
 
   const store = useStore();
   const characters = computed(() => store.state.characters);
@@ -22,6 +24,8 @@
 
 </script>
 <template>
+  <!--header-->
+  <Header/>
   <!--if characters more than 0-->
   <section v-if="characters.length>0" >
   <!--details-->
@@ -30,7 +34,6 @@
         :active="active"
         @close="closeModal"/>
   <!--list-->
-    <h1 class="has-text-warning mb-6 has-text-centered is-family-monospace" > Rick and Morty </h1>
     <!--container-->
     <div class="container">
       <!--columns-->
@@ -58,16 +61,12 @@
   </section>
   <!--if characters more than 0-->
   <section v-else class="notification is-warning is-fullwidth">OOps! some thing wrong has happened</section>
+  <!--footer-->
+  <Footer/>
 </template>
 <style scoped>
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
 .card {
   padding: 2em;
   background:rgb(128 128 128 / 40%);
 }
-
 </style>
